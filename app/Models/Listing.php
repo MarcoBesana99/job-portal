@@ -11,6 +11,11 @@ class Listing extends Model
 
     protected $guarded = [];
 
+    public function getRouteKeyName()
+    {
+        return 'slug';
+    }
+
     public function click() {
         return $this->hasMany(Click::class);
     }

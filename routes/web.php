@@ -21,3 +21,6 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+Route::get('/{listing}', [ListingController::class, 'show'])->name('listings.show');
+
