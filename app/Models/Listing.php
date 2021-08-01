@@ -16,7 +16,7 @@ class Listing extends Model
         return 'slug';
     }
 
-    public function click() {
+    public function clicks() {
         return $this->hasMany(Click::class);
     }
 
